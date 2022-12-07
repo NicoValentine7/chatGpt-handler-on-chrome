@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "chatGpt-handler-on-chrome",
+    "version": "1.0",
+    "description": "handle chatGpt on chrome",
+    "content_scripts": [
+         {
+            "matches": ["https://chat.openai.com/*"],
+             "js": ["content.js"],
+             "css": ["textarea.css"]
+         }
+    ]
+}
